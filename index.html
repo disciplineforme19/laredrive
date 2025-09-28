@@ -7,7 +7,7 @@
   <style>
     body {
       background-color: #000;
-      color: #FFD700;
+      color: #C5A200; /* tmavší luxusní zlatá */
       font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
@@ -17,22 +17,35 @@
       font-family: 'Playfair Display', serif;
       font-size: 3em;
       margin-top: 30px;
+      background: linear-gradient(45deg, #A17C00, #FFD700, #A17C00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; /* gradient text */
+    }
+    h2 {
+      color: #C5A200;
     }
     .brand {
       margin: 40px 0;
     }
     .brand a {
       display: inline-block;
-      color: #FFD700;
       text-decoration: none;
-      border: 1px solid #FFD700;
       padding: 10px 20px;
       border-radius: 5px;
       margin-top: 10px;
+      font-weight: bold;
+      background: linear-gradient(45deg, #A17C00, #FFD700, #A17C00);
+      color: #000; /* text uvnitř tlačítka */
+      border: 1px solid #C5A200;
+      transition: all 0.3s ease;
     }
     .brand a:hover {
-      background-color: #FFD700;
+      background: #C5A200;
       color: #000;
+    }
+    p {
+      max-width: 500px;
+      margin: 0 auto 20px;
     }
   </style>
 </head>
